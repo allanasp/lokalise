@@ -1,0 +1,52 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: lokalise
+      POSTGRES_USER: lokalise
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-lokalise}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lokalise"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ..
+      dockerfile: apps/api/Dockerfile
+    environment:
+      DATABASE_URL: postgres://lokalise:${DB_PASSWORD:-lokalise}@postgres:5432/lokalise
+      BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:-change-me-to-a-random-secret}
+      BETTER_AUTH_URL: ${API_URL:-http://localhost:3000}
+      CORS_ORIGINS: ${WEB_URL:-http://localhost:3001}
+      PORT: "3000"
+    ports:
+      - "3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ..
+      dockerfile: apps/web/Dockerfile
+      args:
+        NUXT_PUBLIC_API_URL: ${API_URL:-http://localhost:3000}
+    environment:
+      NUXT_PUBLIC_API_URL: ${API_URL:-http://localhost:3000}
+      # Internal URL for SSR requests (container-to-container)
+      NUXT_API_INTERNAL_URL: http://api:3000
+    ports:
+      - "3001:3000"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  pgdata:

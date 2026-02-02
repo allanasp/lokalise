@@ -1,0 +1,23 @@
+{
+  "name": "@lokalise/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.6.0",
+    "@hono/zod-validator": "^0.4.0",
+    "better-auth": "^1.2.0",
+    "zod": "^3.24.0",
+    "@lokalise/db": "workspace:*",
+    "drizzle-orm": "^0.38.0",
+    "@paralleldrive/cuid2": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  }
+}

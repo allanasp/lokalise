@@ -1,0 +1,21 @@
+{
+  "name": "@lokalise/web",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 3001",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^3.0.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "better-auth": "^1.2.0",
+    "nuxt": "^4.3.0",
+    "tailwindcss": "^4.1.18",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4"
+  }
+}

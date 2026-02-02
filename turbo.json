@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalPassThroughEnv": ["DATABASE_URL", "BETTER_AUTH_SECRET", "BETTER_AUTH_URL", "CORS_ORIGINS"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".output/**", "dist/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {},
+    "generate": {
+      "env": ["DATABASE_URL"]
+    },
+    "migrate": {
+      "env": ["DATABASE_URL"]
+    },
+    "studio": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
