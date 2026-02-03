@@ -527,11 +527,9 @@ This means you can:
 ### Stay Updated
 
 - **Star this repo** to stay notified of updates
-- 👀 **Watch releases** for new features
-- 🐦 **Follow on Twitter**: [@YourHandle](https://twitter.com/yourhandle)
-- 💼 **LinkedIn**: [Your Company](https://linkedin.com/company/yourcompany)
+- **Star this repo** to stay notified of updates
+- **Watch releases** for new features
 
-## Contributors
 ## Contributors
 
 Thanks to all our contributors:
