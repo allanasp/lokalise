@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌍 Lokalise
+# Lokalise
 
 **Self-hosted, open-source translation management platform with OTA updates**
 
@@ -15,25 +15,25 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 Lokalise is a modern, self-hosted translation management platform built for teams who need complete control over their localization workflow. Push translation updates to mobile apps instantly without app store releases, manage translations through an intuitive web interface, and integrate seamlessly with React Native, Expo, and web applications.
 
 ### Why Lokalise?
 
-- **🚀 Over-the-Air (OTA) Updates** – Update app translations instantly without redeploying
-- **🎯 Self-Hosted** – Keep your translation data on your infrastructure
-- **⚡ Lightning Fast** – Built with Bun, Hono, and modern tech for maximum performance
-- **🔒 Secure by Default** – Multi-tenant architecture with organization-based access control
-- **📱 Mobile-First** – React Native SDK with AsyncStorage caching and automatic updates
-- **🌐 i18next Compatible** – Import/export standard JSON formats
-- **🎨 Beautiful UI** – Modern admin panel built with Nuxt 4 and Nuxt UI
+- **Over-the-Air (OTA) Updates** – Update app translations instantly without redeploying
+- **Self-Hosted** – Keep your translation data on your infrastructure
+- **Lightning Fast** – Built with Bun, Hono, and modern tech for maximum performance
+- **Secure by Default** – Multi-tenant architecture with organization-based access control
+- **Mobile-First** – React Native SDK with AsyncStorage caching and automatic updates
+- **i18next Compatible** – Import/export standard JSON formats
+- **Beautiful UI** – Modern admin panel built with Nuxt 4 and Nuxt UI
 
 ---
 
-## ✨ Features
+## Features
 
-### 🎯 Translation Management
+### Translation Management
 - **Spreadsheet-style Editor** – Manage translation keys across multiple locales in an intuitive interface
 - **Namespace Organization** – Group translations logically (common, errors, features, etc.)
 - **Translation States** – Track draft, published, and custom workflow states
@@ -41,7 +41,7 @@ Lokalise is a modern, self-hosted translation management platform built for team
 - **Bulk Import/Export** – i18next-compatible JSON (nested or flat format)
 - **Search & Filter** – Quickly find keys by namespace, locale, or status
 
-### 📱 Mobile & Web Integration
+### Mobile & Web Integration
 - **Over-the-Air Updates** – Push translation changes to production apps instantly
 - **React Native SDK** – Drop-in `<LokaliseProvider>` with `useTranslation()` hook
 - **Instant Rendering** – Apps render from cache immediately, update in background
@@ -56,7 +56,7 @@ Lokalise is a modern, self-hosted translation management platform built for team
 - **Better Auth Integration** – Email/password authentication with organization management
 - **CORS Protection** – Configurable origins and secure headers
 
-### 🏗️ Developer Experience
+### Developer Experience
 - **Modern Tech Stack** – Bun, Hono, PostgreSQL, Nuxt 4, Drizzle ORM
 - **Type-Safe** – End-to-end TypeScript with strict mode
 - **Docker Ready** – Multi-service stack with one command
@@ -66,7 +66,7 @@ Lokalise is a modern, self-hosted translation management platform built for team
 
 ---
 
-## 🎯 Tech Stack
+## Tech Stack
 
 <table>
   <tr>
@@ -101,7 +101,7 @@ Lokalise is a modern, self-hosted translation management platform built for team
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -130,7 +130,7 @@ docker compose up -d
 ```
 
 **Services will be available at:**
-- 🌐 **Admin UI**: http://localhost:3001
+- **Admin UI**: http://localhost:3001
 - 🔌 **API**: http://localhost:3000
 - 🗄️ **PostgreSQL**: localhost:5432
 
@@ -158,7 +158,7 @@ pnpm run db:migrate
 pnpm run dev
 ```
 
-### 🎉 First Steps
+### First Steps
 
 1. **Open** http://localhost:3001
 2. **Register** a new account
@@ -169,7 +169,7 @@ pnpm run dev
 
 ---
 
-## 📱 React Native SDK
+## React Native SDK
 
 ### Installation
 
@@ -236,14 +236,14 @@ sequenceDiagram
 ```
 
 **Benefits:**
-- ✅ Apps start instantly from cache
-- ✅ Updates happen in background
-- ✅ Minimal bandwidth usage (ETag caching)
-- ✅ No app store releases needed
+- Apps start instantly from cache
+- Updates happen in background
+- Minimal bandwidth usage (ETag caching)
+- No app store releases needed
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### System Overview
 
@@ -315,7 +315,7 @@ sequenceDiagram
 
 ---
 
-## 📊 Performance
+## Performance
 
 ### Benchmarks
 
@@ -350,7 +350,7 @@ sequenceDiagram
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 ### API Reference
 
@@ -383,7 +383,7 @@ Contributing to Lokalise:
 
 ---
 
-## 🛠️ Available Scripts
+## Available Scripts
 
 ```bash
 # Development
@@ -417,16 +417,16 @@ docker compose exec postgres psql # Access PostgreSQL CLI
 
 ---
 
-## 🌍 Use Cases
+## Use Cases
 
-### 1. 📱 Mobile App Translation
+### 1. Mobile App Translation
 A fintech app with 50,000+ users needs to support 10 languages. Using Lokalise:
 - Translators update copy daily through web UI
 - Changes go live instantly via OTA (no app store review)
 - Users see updates within 30 seconds
 - Zero downtime, zero re-deployments
 
-### 2. 🌐 Multi-Brand SaaS Platform
+### 2. Multi-Brand SaaS Platform
 A SaaS company runs 20 white-labeled apps with different translations:
 - Each brand gets a separate project
 - Translators collaborate in organizations
@@ -449,17 +449,17 @@ A corporation with 100+ internal apps needs centralized translations:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We love contributions! Whether it's bug reports, feature requests, or pull requests, all contributions are welcome.
 
 ### Ways to Contribute
 
-- 🐛 **Report Bugs** – [Open an issue](.github/ISSUE_TEMPLATE/bug_report.md)
-- ✨ **Request Features** – [Suggest an enhancement](.github/ISSUE_TEMPLATE/feature_request.md)
-- 📝 **Improve Docs** – Help us make documentation clearer
-- 💻 **Submit PRs** – Check our [Contributing Guide](.github/CONTRIBUTING.md)
-- ⭐ **Star the Project** – Show your support!
+- **Report Bugs** – [Open an issue](.github/ISSUE_TEMPLATE/bug_report.md)
+- **Request Features** – [Suggest an enhancement](.github/ISSUE_TEMPLATE/feature_request.md)
+- **Improve Docs** – Help us make documentation clearer
+- **Submit PRs** – Check our [Contributing Guide](.github/CONTRIBUTING.md)
+- **Star the Project** – Show your support!
 
 ### Development Setup
 
@@ -490,7 +490,7 @@ See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for detailed guidelines.
 
 ---
 
-## 🔒 Security
+## Security
 
 Security is a top priority. If you discover a security vulnerability:
 
@@ -502,30 +502,30 @@ See [SECURITY.md](SECURITY.md) for our full security policy.
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 This means you can:
-- ✅ Use commercially
-- ✅ Modify
-- ✅ Distribute
-- ✅ Use privately
+- Use commercially
+- Modify
+- Distribute
+- Use privately
 
 ---
 
-## 🌟 Community & Support
+## Community & Support
 
 ### Get Help
 
-- 📖 **Documentation**: [Full docs](docs/)
+- **Documentation**: [Full docs](docs/)
 - 💬 **GitHub Discussions**: [Ask questions](https://github.com/allanasp/lokalise/discussions)
-- 🐛 **Issue Tracker**: [Report bugs](https://github.com/allanasp/lokalise/issues)
+- **Issue Tracker**: [Report bugs](https://github.com/allanasp/lokalise/issues)
 - 📧 **Email**: support@yourproject.com
 
 ### Stay Updated
 
-- ⭐ **Star this repo** to stay notified of updates
+- **Star this repo** to stay notified of updates
 - 👀 **Watch releases** for new features
 - 🐦 **Follow on Twitter**: [@YourHandle](https://twitter.com/yourhandle)
 - 💼 **LinkedIn**: [Your Company](https://linkedin.com/company/yourcompany)
@@ -540,7 +540,7 @@ Thanks to all our contributors! 🎉
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 ### Current Focus (v1.x)
 
@@ -569,7 +569,7 @@ Thanks to all our contributors! 🎉
 
 ---
 
-## 💖 Acknowledgments
+## Acknowledgments
 
 Built with amazing open-source projects:
 
@@ -585,7 +585,7 @@ Built with amazing open-source projects:
 
 <div align="center">
 
-**Built with ❤️ using Bun, Hono, Nuxt, and Drizzle**
+**Built with using Bun, Hono, Nuxt, and Drizzle**
 
 [⬆ Back to Top](#-lokalise)
 

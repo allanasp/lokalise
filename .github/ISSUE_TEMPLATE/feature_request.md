@@ -1,12 +1,12 @@
 ---
-name: ✨ Feature Request
+name: Feature Request
 about: Suggest an idea for this project
 title: '[FEATURE] '
 labels: enhancement, needs-triage
 assignees: ''
 ---
 
-## ✨ Feature Description
+## Feature Description
 
 A clear and concise description of the feature you'd like to see.
 
@@ -47,7 +47,7 @@ Any thoughts on:
 - Security considerations
 - Breaking changes
 
-## 📝 Additional Context
+## Additional Context
 
 Add any other context, screenshots, or examples about the feature request here.
 

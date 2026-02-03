@@ -1,29 +1,29 @@
-## 📝 Description
+## Description
 
 <!-- Provide a clear and concise description of your changes -->
 
-## 🔗 Related Issues
+## Related Issues
 
 <!-- Link to related issues (e.g., "Fixes #123", "Relates to #456") -->
 
 Fixes #
 
-## 🎯 Type of Change
+## Type of Change
 
 <!-- Mark the relevant option with an "x" -->
 
-- [ ] 🐛 Bug fix (non-breaking change which fixes an issue)
-- [ ] ✨ New feature (non-breaking change which adds functionality)
-- [ ] 💥 Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] 📝 Documentation update
-- [ ] 🎨 Style/UI update (formatting, styling, etc.)
-- [ ] ♻️ Refactoring (no functional changes)
-- [ ] ⚡ Performance improvement
-- [ ] ✅ Test update
-- [ ] 🔧 Configuration change
-- [ ] 🏗️ Infrastructure/build change
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Documentation update
+- [ ] Style/UI update (formatting, styling, etc.)
+- [ ] Refactoring (no functional changes)
+- [ ] Performance improvement
+- [ ] Test update
+- [ ] Configuration change
+- [ ] Infrastructure/build change
 
-## 🧪 How Has This Been Tested?
+## How Has This Been Tested?
 
 <!-- Describe the tests you ran to verify your changes -->
 
@@ -42,7 +42,7 @@ Fixes #
 
 <!-- Add screenshots to demonstrate UI changes -->
 
-## ✅ Checklist
+## Checklist
 
 <!-- Mark completed items with an "x" -->
 
@@ -73,7 +73,7 @@ Fixes #
 - [ ] I have updated the CHANGELOG.md
 - [ ] I have updated version numbers appropriately
 
-## 🔄 Migration Guide (for breaking changes)
+## Migration Guide (for breaking changes)
 
 <!-- If this PR introduces breaking changes, provide a migration guide -->
 

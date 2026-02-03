@@ -2,19 +2,19 @@
 
 Thank you for your interest in contributing! We love contributions from everyone. By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## 🌟 Ways to Contribute
+## Ways to Contribute
 
 There are many ways to contribute to Lokalise Self-Hosted:
 
-- 🐛 **Report bugs** – Help us identify and fix issues
-- ✨ **Suggest features** – Share ideas for improvements
-- 📝 **Improve documentation** – Help others understand the project
-- 💻 **Submit code** – Fix bugs or implement features
-- 🎨 **Design** – Improve UI/UX
-- 🌍 **Translate** – Help localize the project
-- ⭐ **Star the repo** – Show your support
+- **Report bugs** – Help us identify and fix issues
+- **Suggest features** – Share ideas for improvements
+- **Improve documentation** – Help others understand the project
+- **Submit code** – Fix bugs or implement features
+- **Design** – Improve UI/UX
+- **Translate** – Help localize the project
+- **Star the repo** – Show your support
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -296,7 +296,7 @@ Aim for:
 - **Utilities:** 80%+
 - **UI components:** 70%+
 
-## 📝 Documentation
+## Documentation
 
 ### Code Comments
 
@@ -333,7 +333,7 @@ Update docs when:
 - Modifying authentication
 - Changing error codes
 
-## 🐛 Bug Reports
+## Bug Reports
 
 When reporting bugs, include:
 
@@ -346,7 +346,7 @@ When reporting bugs, include:
 
 Use our [bug report template](.github/ISSUE_TEMPLATE/bug_report.md).
 
-## ✨ Feature Requests
+## Feature Requests
 
 When requesting features, include:
 
@@ -358,7 +358,7 @@ When requesting features, include:
 
 Use our [feature request template](.github/ISSUE_TEMPLATE/feature_request.md).
 
-## 🔍 Code Review Process
+## Code Review Process
 
 ### Submitting PRs
 
@@ -387,7 +387,7 @@ Reviewers will check:
 - Conventional commit format
 - Up-to-date with main branch
 
-## 🎓 Learning Resources
+## Learning Resources
 
 ### Project Technologies
 
@@ -411,19 +411,19 @@ lokalise/
 └── docs/             # Documentation
 ```
 
-## 💬 Community
+## Community
 
 - **GitHub Discussions:** Ask questions, share ideas
 - **Issues:** Report bugs, request features
 - **Pull Requests:** Contribute code
 
-## 📜 License
+## License
 
 By contributing, you agree that your contributions will be licensed under the MIT License.
 
 ---
 
-## ❤️ Thank You!
+## Thank You!
 
 Your contributions make Lokalise Self-Hosted better for everyone. We appreciate your time and effort!
 

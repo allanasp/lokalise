@@ -14,22 +14,22 @@ hero:
       link: https://github.com/allanasp/lokalise
 
 features:
-  - icon: 🚀
+  - icon: 
     title: Over-the-Air Updates
     details: Push translation updates to mobile apps instantly without app store releases
-  - icon: 🎯
+  - icon: 
     title: Self-Hosted
     details: Keep your translation data on your own infrastructure with complete control
-  - icon: ⚡
+  - icon: 
     title: Lightning Fast
     details: Built with Bun and Hono for maximum performance and minimal latency
-  - icon: 🔒
+  - icon: 
     title: Secure by Default
     details: Multi-tenant architecture with organization-based access control
-  - icon: 📱
+  - icon: 
     title: Mobile-First SDK
     details: React Native SDK with AsyncStorage caching and automatic updates
-  - icon: 🌐
+  - icon: 
     title: i18next Compatible
     details: Import and export standard JSON translation formats
 ---

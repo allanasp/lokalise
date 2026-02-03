@@ -1,12 +1,12 @@
 ---
-name: 🐛 Bug Report
+name: Bug Report
 about: Report a bug to help us improve
 title: '[BUG] '
 labels: bug, needs-triage
 assignees: ''
 ---
 
-## 🐛 Bug Description
+## Bug Description
 
 A clear and concise description of what the bug is.
 
