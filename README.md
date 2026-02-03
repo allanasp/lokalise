@@ -41,10 +41,11 @@ Self-hosted, open-source translation management platform with OTA (over-the-air)
 ## Quick Start (Docker)
 
 ```bash
-cd docker
+# Copy and configure environment variables
 cp .env.example .env
 # Edit .env – set BETTER_AUTH_SECRET (openssl rand -hex 32) and DB_PASSWORD
 
+# Start the stack
 docker compose up -d
 ```
 
@@ -74,7 +75,7 @@ pnpm install
 createdb lokalise
 
 # Configure environment
-cp docker/.env.example .env
+cp .env.example .env
 # Edit .env with your DATABASE_URL and BETTER_AUTH_SECRET
 
 # Run migrations
@@ -256,9 +257,8 @@ lokalise/
 │       │   ├── interpolation.ts # {{ variable }} interpolation
 │       │   └── types.ts
 │       └── tsup.config.ts
-├── docker/
-│   ├── docker-compose.yml      # Multi-service stack (postgres, api, web)
-│   └── .env.example
+├── docker-compose.yml          # Multi-service stack (postgres, api, web)
+├── .env.example                # Environment variables template
 ├── turbo.json                  # Turborepo configuration
 ├── pnpm-workspace.yaml
 ├── biome.json                  # Biome linter/formatter config
