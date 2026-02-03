@@ -8,6 +8,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue.svg)](https://www.typescriptlang.org/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)](https://www.docker.com/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](.github/CONTRIBUTING.md)
+[![All Contributors](https://img.shields.io/github/all-contributors/allanasp/lokalise?color=ee8449&style=flat-square)](#contributors)
 
 [Features](#-features) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Contributing](#-contributing) • [Community](#-community)
 
@@ -530,13 +531,32 @@ This means you can:
 - 🐦 **Follow on Twitter**: [@YourHandle](https://twitter.com/yourhandle)
 - 💼 **LinkedIn**: [Your Company](https://linkedin.com/company/yourcompany)
 
-### Contributors
+## Contributors
 
-Thanks to all our contributors! 🎉
+Thanks to all our contributors!
 
-<!-- ALL-CONTRIBUTORS-LIST:START -->
-<!-- This will be automatically generated -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/allanasp"><img src="https://github.com/allanasp.png?s=100" width="100px;" alt="Allan Asp"/><br /><sub><b>Allan Asp</b></sub></a><br /><a href="https://github.com/allanasp/lokalise/commits?author=allanasp" title="Code">💻</a> <a href="https://github.com/allanasp/lokalise/commits?author=allanasp" title="Documentation">📖</a> <a href="#design-allanasp" title="Design">🎨</a> <a href="#infra-allanasp" title="Infrastructure">🚇</a> <a href="#maintenance-allanasp" title="Maintenance">🚧</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Want to be added? Comment on a PR or issue with:
+```
+@all-contributors please add @username for code, docs
+```
+
+Available contribution types: code, docs, design, infra, tests, bug reports, ideas, reviews, maintenance
 
 ---
 

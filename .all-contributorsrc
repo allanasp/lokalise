@@ -1,0 +1,30 @@
+{
+  "projectName": "lokalise",
+  "projectOwner": "allanasp",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "allanasp",
+      "name": "Allan Asp",
+      "avatar_url": "https://github.com/allanasp.png",
+      "profile": "https://github.com/allanasp",
+      "contributions": [
+        "code",
+        "doc",
+        "design",
+        "infra",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": false,
+  "skipCi": true
+}

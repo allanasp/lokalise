@@ -1,0 +1,87 @@
+name: Update Contributors
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-contributors:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for all branches
+
+      - name: Generate contributors list
+        id: contributors
+        run: |
+          # Get all contributors with their commit count
+          git log --format='%aN <%aE>' | sort | uniq -c | sort -rn > /tmp/contributors.txt
+
+          # Generate markdown list
+          echo "## Contributors" > /tmp/contributors.md
+          echo "" >> /tmp/contributors.md
+          echo "Thanks to all our contributors:" >> /tmp/contributors.md
+          echo "" >> /tmp/contributors.md
+
+          # Parse contributors and create list
+          while read count name email; do
+            # Extract name and email
+            contributor_name=$(echo "$name $email" | sed 's/ <.*>//')
+            contributor_email=$(echo "$name $email" | sed 's/.*<\(.*\)>.*/\1/')
+
+            # Skip bots and automated commits
+            if [[ ! "$contributor_email" =~ "noreply@" ]] && [[ ! "$contributor_name" =~ "bot" ]]; then
+              # Try to get GitHub username from email
+              github_user=$(git log --author="$contributor_email" --format='%an' | head -1)
+
+              echo "- **$contributor_name** - $count commits" >> /tmp/contributors.md
+            fi
+          done < /tmp/contributors.txt
+
+          echo "" >> /tmp/contributors.md
+          echo "Want to contribute? Check out our [Contributing Guide](.github/CONTRIBUTING.md)." >> /tmp/contributors.md
+
+      - name: Update README
+        run: |
+          # Check if Contributors section exists
+          if grep -q "## Contributors" README.md; then
+            # Replace existing Contributors section
+            sed -i '/## Contributors/,/^## /{ /## Contributors/!{ /^## /!d; }; }' README.md
+
+            # Insert new contributors list before next section
+            awk '/## Contributors/{print; system("cat /tmp/contributors.md"); next}1' README.md > README.tmp
+            mv README.tmp README.md
+          else
+            # Append to end of README
+            echo "" >> README.md
+            cat /tmp/contributors.md >> README.md
+          fi
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "docs: update contributors list [skip ci]"
+          git push
