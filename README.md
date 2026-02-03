@@ -532,34 +532,13 @@ This means you can:
 - 💼 **LinkedIn**: [Your Company](https://linkedin.com/company/yourcompany)
 
 ## Contributors
+## Contributors
 
-Thanks to all our contributors!
+Thanks to all our contributors:
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/allanasp"><img src="https://github.com/allanasp.png?s=100" width="100px;" alt="Allan Asp"/><br /><sub><b>Allan Asp</b></sub></a><br /><a href="https://github.com/allanasp/lokalise/commits?author=allanasp" title="Code">💻</a> <a href="https://github.com/allanasp/lokalise/commits?author=allanasp" title="Documentation">📖</a> <a href="#design-allanasp" title="Design">🎨</a> <a href="#infra-allanasp" title="Infrastructure">🚇</a> <a href="#maintenance-allanasp" title="Maintenance">🚧</a></td>
-    </tr>
-  </tbody>
-</table>
+- **allanasp** - 8 commits
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-Want to be added? Comment on a PR or issue with:
-```
-@all-contributors please add @username for code, docs
-```
-
-Available contribution types: code, docs, design, infra, tests, bug reports, ideas, reviews, maintenance
-
----
-
+Want to contribute? Check out our [Contributing Guide](.github/CONTRIBUTING.md).
 ## Roadmap
 
 ### Current Focus (v1.x)
