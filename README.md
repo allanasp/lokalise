@@ -531,10 +531,11 @@ This means you can:
 - **Watch releases** for new features
 
 ## Contributors
+## Contributors
 
 Thanks to all our contributors:
 
-- **allanasp** - 8 commits
+- **allanasp** - 9 commits
 
 Want to contribute? Check out our [Contributing Guide](.github/CONTRIBUTING.md).
 ## Roadmap
